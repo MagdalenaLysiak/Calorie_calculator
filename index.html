@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calorie Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+   <section>
+    <div class="container">
+      <div class="calc">
+        <h2>Burnt calories calculator</h2>
+        <form action="">
+          <div>
+            <label for="">Weight:</label>
+            <input type="text" placeholder="kg" class="weight">
+          </div>
+          <div>
+            <label for="">Activity type:</label>
+            <select name="" class="activity">
+              <option disabled selected value="activity">
+                Choose activity
+              </option>
+              <option value=9.8>Running</option>
+              <option value=4>Walking</option>
+              <option value=3>Yoga</option>
+              <option value=9.5>Cycling</option>
+              <option value=6>Rollerblading</option>
+            </select>
+          </div>
+          <div>
+            <p class="met">Metabolic Equivalent of a Task (MET): 0</p>
+          </div>
+          <div>
+            <label for="">Activity duration:</label>
+            <input type="text" placeholder="minutes" class="duration">
+          </div>
+          <button type="button" class="btn">Calculate</button>
+          <p class="error">Please enter all required data.</p>
+        </form>
+
+        <div class="result">
+          <p class="kcal">kcal burnt: 0</p>
+          <p class="kg">kg burnt: 0 / lbs burnt: 0</p>
+        </div>
+      </div>
+    </div>
+   </section>
+  <script src="script.js"></script>
+  </body>
+</html>
